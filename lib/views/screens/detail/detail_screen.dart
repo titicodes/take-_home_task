@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import '../../../constant/app_colors.dart';
 import '../../../model/products.dart';
-import '../image_view.dart';
+import '../../widgets/add_to_cart_model.dart';
 
 class ProductDetailScreen extends StatefulWidget {
   final Product product;
@@ -57,7 +58,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                         context: context,
                         backgroundColor: Colors.transparent,
                         builder: (context) {
-                          return AddToCartModal();
+                          return const AddToCartModal();
                         },
                       );
                     },
@@ -77,7 +78,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
         ),
         body: ListView(
             shrinkWrap: true,
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             children: [
               Stack(
                 alignment: Alignment.topCenter,
