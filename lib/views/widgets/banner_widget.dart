@@ -10,23 +10,45 @@ class BannerWidget extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(6),
           image: const DecorationImage(
-              image: AssetImage('assets/images/collection_clothes.jpg'))),
+              image: AssetImage('assets/images/banner_background.png'))),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
+            '#FASHION DAY',
+            style: TextStyle(
+                color: AppColor.secondary,
+                fontWeight: FontWeight.w500,
+                fontSize: 13.0),
+          ),
+          const Text(
             '80% OFF',
             style: TextStyle(
                 color: AppColor.secondary,
                 fontWeight: FontWeight.w500,
                 fontSize: 13.0),
           ),
-          SizedBox(
+          const SizedBox(
             height: 6,
           ),
-          Text(
-            'Intenship',
-            style: TextStyle(color: AppColor.secondary, fontSize: 24),
+          const Text(
+            'Discover Fashion that fits your style',
+            style: TextStyle(
+                color: AppColor.secondary,
+                fontSize: 12.0,
+                fontFamily: 'poppins'),
+          ),
+          Container(
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8), color: Colors.black),
+            child: const Text(
+              'Check this out',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'poppins',
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12),
+            ),
           )
         ],
       ),

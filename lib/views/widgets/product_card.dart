@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:home_task/views/screens/detail/detail_screen.dart';
 import '../../constant/app_colors.dart';
 import '../../model/products.dart';
@@ -32,11 +33,9 @@ class ProductCard extends StatelessWidget {
                 image: DecorationImage(
                     image: AssetImage(product.image[0]), fit: BoxFit.cover),
               ),
-              child: IconButton(
-                icon: Icon(
-                  Icons.heart_broken,
-                ),
-                onPressed: () {},
+              child: Icon(
+                Icons.heart_broken,
+                color: product.isFavourite! ? Colors.pinkAccent : Colors.grey,
               ),
             ),
 
@@ -57,7 +56,7 @@ class ProductCard extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.only(top: 2, bottom: 8),
                     child: Text(
-                      '${product.price}',
+                      product.description,
                       style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
@@ -66,12 +65,42 @@ class ProductCard extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Text(
-                    product.storeName,
-                    style: const TextStyle(
-                      color: Colors.grey,
-                      fontSize: 10,
-                    ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        child: Row(children: [
+                          SvgPicture.asset('assets/svg/Star-active.svg'),
+                          RichText(
+                            text: TextSpan(
+                              text: '${product.rating}',
+                              style: DefaultTextStyle.of(context).style,
+                              children: const <TextSpan>[
+                                TextSpan(
+                                    text: '|',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold)),
+                                TextSpan(
+                                  text: '2356',
+                                  style: TextStyle(
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 16),
+                                ),
+                              ],
+                            ),
+                          )
+                        ]),
+                      ),
+                      Text(
+                        "${product.price}",
+                        style: const TextStyle(
+                            color: AppColor.primary,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500),
+                      )
+                    ],
                   )
                 ],
               ),

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:home_task/views/widgets/product_card.dart';
-
 import '../../../constant/app_colors.dart';
 import '../../../model/products.dart';
 import '../../../service/category_service.dart';
 import '../../../service/product_service.dart';
+
 import '../../widgets/category_card.dart';
 import '../../widgets/main_app_bar.dart';
 
@@ -60,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
               // Section 2 - category
               Container(
                 width: MediaQuery.of(context).size.width,
-                color: AppColor.secondary,
+                //color: AppColor.secondary,
                 padding: const EdgeInsets.only(top: 12, bottom: 24),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -84,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               foregroundColor: Colors.white,
                             ),
                             child: Text(
-                              'View All',
+                              'See More',
                               style: TextStyle(
                                   color: Colors.white.withOpacity(0.7),
                                   fontWeight: FontWeight.w400),
@@ -96,20 +95,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                child: Wrap(
-                  spacing: 16,
-                  runSpacing: 16,
-                  children: List.generate(
-                    productData.length,
-                    (index) => ProductCard(
-                      product: productData[index],
-                    ),
-                  ),
-                ),
-              )
+              // Container(
+              //   padding:
+              //       const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              //   child: Wrap(
+              //     spacing: 16,
+              //     runSpacing: 16,
+              //     children: List.generate(
+              //       productData.length,
+              //       (index) => ProductCard(
+              //         product: productData[index],
+              //       ),
+              //     ),
+              //   ),
+              // )
             ]));
   }
 }

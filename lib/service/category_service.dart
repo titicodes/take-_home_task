@@ -8,32 +8,32 @@ class CategoryService {
 var categoryRawData = [
   {
     'featured': true,
-    'icon_url': 'assets/icons/Discount.svg',
-    'name': 'best offer',
+    'icon_url': 'assets/icons/Category.svg',
+    'name': 'Category',
   },
   {
     'featured': false,
-    'icon_url': 'assets/icons/High-heels.svg',
-    'name': 'woman shoes',
+    'icon_url': 'assets/icons/Category.svg',
+    'name': 'Flight',
   },
   {
     'featured': false,
-    'icon_url': 'assets/icons/Woman-dress.svg',
-    'name': 'woman dress',
+    'icon_url': 'assets/icons/Filter.svg',
+    'name': 'Bill',
   },
   {
     'featured': false,
-    'icon_url': 'assets/icons/Man-Clothes.svg',
+    'icon_url': 'assets/icons/Paper Bag.svg',
     'name': 'man clothes',
   },
   {
     'featured': false,
-    'icon_url': 'assets/icons/Man-Pants.svg',
+    'icon_url': 'assets/icons/Bag.svg',
     'name': 'man pants',
   },
   {
     'featured': false,
-    'icon_url': 'assets/icons/Man-Shoes.svg',
+    'icon_url': 'assets/icons/Filter.svg',
     'name': 'man shoes',
   },
 ];

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../constant/app_colors.dart';
@@ -30,10 +31,9 @@ class _SearchResultPageState extends State<SearchResultPage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        brightness: Brightness.dark,
         automaticallyImplyLeading: false,
         centerTitle: false,
-        backgroundColor: AppColor.primary,
+        backgroundColor: AppColor.border,
         elevation: 0,
         leading: IconButton(
           onPressed: () => Navigator.of(context).pop(),
@@ -119,6 +119,7 @@ class _SearchResultPageState extends State<SearchResultPage>
             ),
           ),
         ),
+        systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: TabBarView(
         controller: tabController,

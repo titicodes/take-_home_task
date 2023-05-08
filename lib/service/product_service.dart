@@ -16,10 +16,10 @@ var productRawData = [
       'assets/images/collection_clothes.jpg',
     ],
     'name': 'Shirts',
-    'price': 1429000,
+    'price': 142,
     'rating': 4.0,
     'description': 'Men`s Short Sleeve-\nCrewneck TShirt.',
-    'store_name': 'Nike Indonesia',
+    'store_name': 'Nike ',
     'colors': [
       {
         'name': 'black',
@@ -150,9 +150,9 @@ var productRawData = [
   {
     'image': [
       'assets/images/black_polo.jpg',
-      'assets/images/coloctions_clothes.jpg',
+      'assets/images/cololections.jpg',
     ],
-    'name': "Nike Sportswear Swoosh",
+    'name': " Sportswear Swoosh",
     'price': 849000,
     'rating': 4.0,
     'description': 'Men`s Short Sleeve-\nCrewneck TShirt.',
@@ -423,7 +423,7 @@ var productRawData = [
 var searchedProductRawData = [
   {
     'image': [
-      'assets/images/search/searchitem6.jpg',
+      'assets/images/search/nice_sleeve.jpg',
       'assets/images/nikegrey.jpg',
     ],
     'name': 'Air Jordan XXXVI SE PF',
@@ -491,7 +491,7 @@ var searchedProductRawData = [
   // 2
   {
     'image': [
-      'assets/images/search/searchitem3.jpg',
+      'assets/images/search/nice_sleeve.jpg',
       'assets/images/nikeblack.jpg',
     ],
     'name': "Air Jordan 1 Retro OG",
@@ -560,7 +560,7 @@ var searchedProductRawData = [
 
   {
     'image': [
-      'assets/images/search/searchitem5.jpg',
+      'assets/images/search/cololections.jpg',
       'assets/images/nikeblack.jpg',
     ],
     'name': "Jordan Point Lane",
@@ -630,7 +630,7 @@ var searchedProductRawData = [
 
   {
     'image': [
-      'assets/images/search/searchitem2.jpg',
+      'assets/images/search/back_polo.jpg',
       'assets/images/nikeblack.jpg',
     ],
     'name': "Air Jordan 4 Crimson",
@@ -700,7 +700,7 @@ var searchedProductRawData = [
 
   {
     'image': [
-      'assets/images/search/searchitem4.jpg',
+      'assets/images/search/white_t_shirts.jpg',
       'assets/images/nikeblack.jpg',
     ],
     'name': "Jordan Delta 2 SE",
@@ -774,7 +774,7 @@ var searchedProductRawData = [
 
   {
     'image': [
-      'assets/images/search/searchitem1.jpg',
+      'assets/images/search/cololections.jpg',
       'assets/images/nikeblack.jpg',
     ],
     'name': "Jordan One Take 3",

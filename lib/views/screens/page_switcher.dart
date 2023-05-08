@@ -8,7 +8,7 @@ class PageSwitcher extends StatefulWidget {
   const PageSwitcher({super.key});
 
   @override
-  _PageSwitcherState createState() => _PageSwitcherState();
+  State<PageSwitcher> createState() => _PageSwitcherState();
 }
 
 class _PageSwitcherState extends State<PageSwitcher> {
