@@ -43,7 +43,7 @@ class _AddToCartModalState extends State<AddToCartModal> {
               Container(
                 margin: const EdgeInsets.only(left: 6),
                 child: Text(
-                  'Jumlah Produk',
+                  'Nice Produk',
                   style: TextStyle(
                     fontFamily: 'poppins',
                     color: const Color(0xFF0A0E2F).withOpacity(0.5),

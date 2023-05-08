@@ -11,25 +11,25 @@ class SearchService {
 
 var listSearchHistoryRawData = [
   {'title': 'Shirt'},
-  {'title': 'Adidas Alphabounce'},
-  {'title': 'Curry 5'},
+  {'title': 'Adidas'},
+  {'title': 'Short Sleeve'},
   {'title': 'Jordan BRED'},
-  {'title': 'Heiden Heritage Xylo'},
-  {'title': 'Ventela Public'},
+  {'title': 'Nice Polo'},
+  {'title': 'T Shirt'},
 ];
 
 var listPopularSearchRawData = [
   {
-    'title': 'Heiden Heritage',
-    'image_url': 'assets/images/search/popularsearchitem8.jpg',
+    'title': 'Shirt',
+    'image_url': 'assets/images/search/black_polo.jpg',
   },
   {
     'title': 'Tech Wear',
-    'image_url': 'assets/images/search/popularsearchitem4.jpg',
+    'image_url': 'assets/images/search/white_t_shirt.jpg',
   },
   {
     'title': 'Local Brand',
-    'image_url': 'assets/images/search/popularsearchitem7.jpg',
+    'image_url': 'assets/images/search/short_sleeve.jpg',
   },
   {
     'title': 'Flannel Hoodie',
@@ -37,18 +37,18 @@ var listPopularSearchRawData = [
   },
   {
     'title': 'Sport Shoes',
-    'image_url': 'assets/images/search/popularsearchitem6.jpg',
+    'image_url': 'assets/images/search/nice_sleeve.jpg',
   },
   {
     'title': 'Black Tshirt',
-    'image_url': 'assets/images/search/popularsearchitem2.jpg',
+    'image_url': 'assets/images/search/shot_s_collection.jpg',
   },
   {
     'title': 'Sport Wear',
-    'image_url': 'assets/images/search/popularsearchitem5.jpg',
+    'image_url': 'assets/images/search/shot_s_collection.jpg',
   },
   {
     'title': 'Oversized Tshirt',
-    'image_url': 'assets/images/search/popularsearchitem1.jpg',
+    'image_url': 'assets/images/search/shot_s_collection.jpg',
   },
 ];

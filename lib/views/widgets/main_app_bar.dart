@@ -65,7 +65,7 @@ class _MainAppBarState extends State<MainAppBar> {
             value: widget.chatValue,
             margin: const EdgeInsets.only(left: 16),
             icon: SvgPicture.asset(
-              'assets/icons/Chat.svg',
+              'assets/icons/Bag.svg',
               color: Colors.white,
             ),
           ),
