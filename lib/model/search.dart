@@ -8,13 +8,13 @@ class SearchHistory {
   }
 }
 
-class PopularSearch {
+class ProductSearch {
   String? title;
   String? imageUrl;
 
-  PopularSearch({this.title, this.imageUrl});
+  ProductSearch({this.title, this.imageUrl});
 
-  factory PopularSearch.fromJson(Map<String, dynamic> json) {
-    return PopularSearch(title: json['title'], imageUrl: json['image_url']);
+  factory ProductSearch.fromJson(Map<String, dynamic> json) {
+    return ProductSearch(title: json['title'], imageUrl: json['image_url']);
   }
 }

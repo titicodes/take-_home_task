@@ -32,7 +32,12 @@ class ProductCard extends StatelessWidget {
                 image: DecorationImage(
                     image: AssetImage(product.image[0]), fit: BoxFit.cover),
               ),
-              child: IconButton(icon: Icon(Icons.heart_broken, color: ,), onPressed: () {  },),
+              child: IconButton(
+                icon: Icon(
+                  Icons.heart_broken,
+                ),
+                onPressed: () {},
+              ),
             ),
 
             // item details

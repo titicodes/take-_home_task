@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../constant/app_colors.dart';
+import 'home/home_screen.dart';
+
 class PageSwitcher extends StatefulWidget {
   const PageSwitcher({super.key});
 
@@ -21,13 +24,17 @@ class _PageSwitcherState extends State<PageSwitcher> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: [
-        HomePage(),
-        FeedsPage(),
-        NotificationPage(),
-        ProfilePage(),
+        const HomeScreen(),
+        // FeedsPage(),
+        // NotificationPage(),
+        // ProfilePage(),
+        const SizedBox(),
+        const SizedBox(),
+        const SizedBox(),
+        const SizedBox(),
       ][_selectedIndex],
       bottomNavigationBar: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             border:
                 Border(top: BorderSide(color: AppColor.primarySoft, width: 2))),
         child: BottomNavigationBar(

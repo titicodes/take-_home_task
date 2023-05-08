@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:home_task/views/screens/message_screen.dart';
 
 import '../../constant/app_colors.dart';
+import '../screens/cart_screen.dart';
+import '../screens/search/search_screen.dart';
 import 'custom_icon_with_counter.dart';
 import 'dummy_search_widget.dart';
 
@@ -37,18 +40,18 @@ class _MainAppBarState extends State<MainAppBar> {
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => SearchPage(),
+                  builder: (context) => const SearchPage(),
                 ),
               );
             },
           ),
           CustomIconButtonWidget(
             onTap: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => CartPage()));
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const CartScreen()));
             },
             value: widget.cartValue,
-            margin: EdgeInsets.only(left: 16),
+            margin: const EdgeInsets.only(left: 16),
             icon: SvgPicture.asset(
               'assets/icons/Bag.svg',
               color: Colors.white,
@@ -56,8 +59,8 @@ class _MainAppBarState extends State<MainAppBar> {
           ),
           CustomIconButtonWidget(
             onTap: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => MessagePage()));
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const MessageScreen()));
             },
             value: widget.chatValue,
             margin: const EdgeInsets.only(left: 16),

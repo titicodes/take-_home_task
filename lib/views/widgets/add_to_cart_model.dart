@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../../constant/app_colors.dart';
+import '../screens/cart_screen.dart';
 
 class AddToCartModal extends StatefulWidget {
   const AddToCartModal({super.key});
 
   @override
-  _AddToCartModalState createState() => _AddToCartModalState();
+  State<AddToCartModal> createState() => _AddToCartModalState();
 }
 
 class _AddToCartModalState extends State<AddToCartModal> {
@@ -124,8 +125,8 @@ class _AddToCartModalState extends State<AddToCartModal> {
                   flex: 6,
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => CartPage()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const CartScreen()));
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColor.primary,

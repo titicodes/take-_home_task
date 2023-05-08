@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:home_task/views/screens/page_switcher.dart';
 
 import '../../constant/app_colors.dart';
 
@@ -70,20 +71,20 @@ class EmptyCartPage extends StatelessWidget {
                 Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) => PageSwitcher()));
               },
+              style: ElevatedButton.styleFrom(
+                foregroundColor: AppColor.primary,
+                backgroundColor: AppColor.border,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16)),
+                shadowColor: Colors.transparent,
+              ),
               child: const Text(
                 'Start Shopping',
                 style: TextStyle(
                     fontWeight: FontWeight.w600, color: AppColor.secondary),
-              ),
-              style: ElevatedButton.styleFrom(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-                primary: AppColor.border,
-                elevation: 0,
-                onPrimary: AppColor.primary,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16)),
-                shadowColor: Colors.transparent,
               ),
             ),
           ],
