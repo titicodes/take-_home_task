@@ -96,20 +96,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                child: Wrap(
-                  spacing: 16,
-                  runSpacing: 16,
-                  children: List.generate(
-                    productData.length,
-                    (index) => ProductCard(
-                      product: productData[index],
-                    ),
-                  ),
-                ),
-              )
+              // Container(
+              //   padding:
+              //       const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              //   child: Wrap(
+              //     spacing: 16,
+              //     runSpacing: 16,
+              //     children: List.generate(
+              //       productData.length,
+              //       (index) => ProductCard(
+              //         product: productData[index],
+              //       ),
+              //     ),
+              //   ),
+              // )
             ]));
   }
 }
