@@ -32,7 +32,11 @@ class EmptyCartPage extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).pop();
           },
-          icon: SvgPicture.asset('assets/icons/Arrow-left.svg'),
+          //icon: SvgPicture.asset('assets/icons/Arrow-left.svg'),
+          icon: Image.asset(
+            'assets/icons/back.png',
+            color: Colors.white,
+          ),
         ),
         systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
@@ -47,7 +51,7 @@ class EmptyCartPage extends StatelessWidget {
               width: 164,
               height: 164,
               margin: const EdgeInsets.only(bottom: 32),
-              child: SvgPicture.asset('assets/icons/Paper Bag.svg'),
+              child: Image.asset('assets/icons/briefcase.png'),
             ),
             const Text(
               'Empty Cart  ☹️',

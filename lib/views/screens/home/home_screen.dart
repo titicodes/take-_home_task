@@ -6,6 +6,7 @@ import '../../../service/product_service.dart';
 
 import '../../widgets/category_card.dart';
 import '../../widgets/main_app_bar.dart';
+import '../../widgets/product_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -95,20 +96,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-              // Container(
-              //   padding:
-              //       const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-              //   child: Wrap(
-              //     spacing: 16,
-              //     runSpacing: 16,
-              //     children: List.generate(
-              //       productData.length,
-              //       (index) => ProductCard(
-              //         product: productData[index],
-              //       ),
-              //     ),
-              //   ),
-              // )
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                child: Wrap(
+                  spacing: 16,
+                  runSpacing: 16,
+                  children: List.generate(
+                    productData.length,
+                    (index) => ProductCard(
+                      product: productData[index],
+                    ),
+                  ),
+                ),
+              )
             ]));
   }
 }

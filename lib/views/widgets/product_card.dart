@@ -71,7 +71,7 @@ class ProductCard extends StatelessWidget {
                     children: [
                       Container(
                         child: Row(children: [
-                          SvgPicture.asset('assets/svg/Star-active.svg'),
+                          Image.asset('assets/icons/star_rating.png'),
                           RichText(
                             text: TextSpan(
                               text: '${product.rating}',

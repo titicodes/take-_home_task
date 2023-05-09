@@ -21,34 +21,34 @@ var listSearchHistoryRawData = [
 var listPopularSearchRawData = [
   {
     'title': 'Shirt',
-    'image_url': 'assets/images/search/black_polo.jpg',
+    'image_url': 'assets/images/black_polo.jpg',
   },
   {
     'title': 'Tech Wear',
-    'image_url': 'assets/images/search/white_t_shirt.jpg',
+    'image_url': 'assets/images/white_t_shirt.jpg',
   },
   {
     'title': 'Local Brand',
-    'image_url': 'assets/images/search/short_sleeve.jpg',
+    'image_url': 'assets/images/short_sleeve.jpg',
   },
   {
     'title': 'Flannel Hoodie',
-    'image_url': 'assets/images/search/popularsearchitem3.jpg',
+    'image_url': 'assets/images/white_t_shirt.jpg',
   },
   {
     'title': 'Sport Shoes',
-    'image_url': 'assets/images/search/nice_sleeve.jpg',
+    'image_url': 'assets/images/nice_sleeve.jpg',
   },
   {
     'title': 'Black Tshirt',
-    'image_url': 'assets/images/search/shot_s_collection.jpg',
+    'image_url': 'assets/images/shot_s_collection.jpg',
   },
   {
     'title': 'Sport Wear',
-    'image_url': 'assets/images/search/shot_s_collection.jpg',
+    'image_url': 'assets/images/shot_s_collection.jpg',
   },
   {
     'title': 'Oversized Tshirt',
-    'image_url': 'assets/images/search/shot_s_collection.jpg',
+    'image_url': 'assets/images/shot_s_collection.jpg',
   },
 ];

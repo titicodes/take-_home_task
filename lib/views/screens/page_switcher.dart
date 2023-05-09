@@ -44,31 +44,43 @@ class _PageSwitcherState extends State<PageSwitcher> {
           items: [
             (_selectedIndex == 0)
                 ? BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/icons/Home-active.svg'),
-                    label: '')
+                    icon: Image.asset('assets/icons/home.png'), label: '')
                 : BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/icons/Home.svg'), label: ''),
+                    icon: Image.asset(
+                      'assets/icons/home.png',
+                      color: Colors.green,
+                    ),
+                    label: ''),
             (_selectedIndex == 1)
                 ? BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/icons/Category-active.svg'),
-                    label: '')
+                    icon: Image.asset('assets/icons/wallet.png'), label: '')
                 : BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/icons/Category.svg'),
+                    icon: Image.asset(
+                      'assets/icons/wallet.png',
+                      color: Colors.green,
+                    ),
                     label: ''),
             (_selectedIndex == 2)
-                ? BottomNavigationBarItem(
-                    icon: SvgPicture.asset(
-                        'assets/icons/Notification-active.svg'),
-                    label: '')
-                : BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/icons/Notification.svg'),
+                ? const BottomNavigationBarItem(
+                    // icon: Image.asset('assets/icons/Notification-active.svg'),
+                    label: '',
+                    icon: Icon(Icons.notifications_active))
+                : const BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.notifications_active,
+                      color: Colors.green,
+                    ),
                     label: ''),
             (_selectedIndex == 3)
-                ? BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/icons/Profile-active.svg'),
+                ? const BottomNavigationBarItem(
+                    // icon: SvgPicture.asset('assets/icons/Profile-active.svg'),
+                    icon: Icon(Icons.settings),
                     label: '')
-                : BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/icons/Profile.svg'),
+                : const BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.settings,
+                      color: Colors.green,
+                    ),
                     label: ''),
           ],
         ),

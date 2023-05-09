@@ -33,14 +33,16 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                 margin: const EdgeInsets.only(right: 14),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: AppColor.secondary,
+                    backgroundColor: AppColor.secondary,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16)),
                     elevation: 0,
                   ),
                   onPressed: () {},
-                  child: SvgPicture.asset('assets/icons/Chat.svg',
-                      color: Colors.white),
+                  child: Image.asset(
+                    'assets/icons/comment.png',
+                    color: Colors.white,
+                  ),
                 ),
               ),
               Expanded(
