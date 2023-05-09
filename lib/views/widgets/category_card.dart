@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
 import '../../model/category.dart';
 
 class CategoryCard extends StatelessWidget {
@@ -26,7 +24,7 @@ class CategoryCard extends StatelessWidget {
           children: [
             Container(
               margin: const EdgeInsets.only(bottom: 6),
-              child: SvgPicture.asset(
+              child: Image.asset(
                 // ignore: unnecessary_string_interpolations
                 '${data.iconUrl}',
                 color: Colors.white,

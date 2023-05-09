@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class DummySearchWidget2 extends StatelessWidget {
   final VoidCallback onTap;
@@ -21,14 +20,8 @@ class DummySearchWidget2 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                margin: const EdgeInsets.only(right: 12),
-                child: SvgPicture.asset(
-                  'assets/icons/Search.svg',
-                  color: Colors.white,
-                  width: 18,
-                  height: 18,
-                ),
-              ),
+                  margin: const EdgeInsets.only(right: 12),
+                  child: const Icon(Icons.search)),
               Text(
                 'Find a product...',
                 style: TextStyle(

@@ -15,7 +15,7 @@ class ProductSearchCard extends StatelessWidget {
       child: Container(
         color: Colors.white,
         width: MediaQuery.of(context).size.width / 2,
-        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: Row(
           children: [
             Container(

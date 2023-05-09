@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import '../../../constant/app_colors.dart';
 import '../../../model/products.dart';
 import '../../widgets/add_to_cart_model.dart';

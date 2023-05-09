@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:home_task/views/screens/message_screen.dart';
 
 import '../../constant/app_colors.dart';
@@ -52,8 +52,9 @@ class _MainAppBarState extends State<MainAppBar> {
             },
             value: widget.cartValue,
             margin: const EdgeInsets.only(left: 16),
-            icon: SvgPicture.asset(
-              'assets/icons/Bag.svg',
+            icon: Icon(
+              Icons.card_travel,
+              // 'assets/icons/briefcase.png',
               color: Colors.white,
             ),
           ),
@@ -64,8 +65,8 @@ class _MainAppBarState extends State<MainAppBar> {
             },
             value: widget.chatValue,
             margin: const EdgeInsets.only(left: 16),
-            icon: SvgPicture.asset(
-              'assets/icons/Bag.svg',
+            icon: Icon(
+              Icons.card_travel,
               color: Colors.white,
             ),
           ),

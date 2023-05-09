@@ -7,7 +7,7 @@ class ImageViewer extends StatefulWidget {
   const ImageViewer({super.key, required this.imageUrl});
 
   @override
-  _ImageViewerState createState() => _ImageViewerState();
+  State<ImageViewer> createState() => _ImageViewerState();
 }
 
 class _ImageViewerState extends State<ImageViewer> {

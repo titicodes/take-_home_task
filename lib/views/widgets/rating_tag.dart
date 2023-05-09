@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../constant/app_colors.dart';
 
@@ -20,8 +19,8 @@ class RatingTag extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SvgPicture.asset(
-            'assets/icons/Star-active.svg',
+          Image.asset(
+            'assets/icons/star_rating.png',
             width: 14,
             height: 14,
           ),
